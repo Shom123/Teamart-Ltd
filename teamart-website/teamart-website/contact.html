@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact and Enquiries | TEAMART LIMITED</title>
+<meta name="description" content="Make a tea enquiry with TEAMART LIMITED, Mombasa. Tell us the grade, volume and destination port and we will reply with availability and FOB terms.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<div class="phead"><div class="wrap">
+  <h1>Make an enquiry</h1>
+  <p>Tell us what you need and we will reply with availability and FOB Mombasa terms.</p>
+</div></div>
+
+<section><div class="wrap contact">
+  <div class="info">
+    <h2>Talk to us directly</h2>
+    <p>For fast answers, message us on WhatsApp or email.</p>
+    <b>Email</b><p><a href="mailto:teamartke@gmail.com">teamartke@gmail.com</a></p>
+    <b>WhatsApp</b><p><a href="https://wa.me/249900904853">+249 900 904 853</a></p>
+    <b>Telephone</b><p><a href="tel:0725255463">0725 255 463</a><br><a href="tel:0768115976">0768 115 976</a></p>
+    <b>Office</b><p>P.O. Box 86168 - 80100<br>Mombasa, Kenya</p>
+  </div>
+
+  <form id="enquiry-form" aria-labelledby="enquiry-title" novalidate>
+    <h2 id="enquiry-title" class="full" style="font-size:1.5rem" tabindex="-1"><span id="enquiry"></span>Your enquiry</h2>
+    <label>Full name<input name="name" autocomplete="name" required><span class="err" role="alert"></span></label>
+    <label>Company<input name="company" autocomplete="organization" required><span class="err" role="alert"></span></label>
+    <label>Country<input name="country" autocomplete="country-name" required><span class="err" role="alert"></span></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required><span class="err" role="alert"></span></label>
+    <label>Phone or WhatsApp (optional)<input name="phone" type="tel" autocomplete="tel"><span class="err"></span></label>
+    <label>Grade
+      <select name="grade" required>
+        <option value="">Choose a grade</option>
+        <optgroup label="Black CTC">
+          <option>BP1 – Broken Pekoe 1</option><option>PF1 – Pekoe Fanning 1</option>
+          <option>PD – Pekoe Dust</option><option>D1 – Dust 1</option>
+        </optgroup>
+        <optgroup label="Orthodox">
+          <option>TGFOP – Tippy Golden Flowery Orange Pekoe</option><option>TGBOP – Tippy Golden Broken Orange Pekoe</option>
+        </optgroup>
+        <option>Several grades or not sure yet</option>
+      </select><span class="err" role="alert"></span></label>
+    <label>Quantity (optional)<input name="qty" placeholder="e.g. 20 metric tons per month"><span class="err"></span></label>
+    <label>Destination port (optional)<input name="port" placeholder="e.g. Karachi"><span class="err"></span></label>
+    <label class="full">Your message<textarea name="message" rows="5" placeholder="Packaging, blend or sample requirements, timing, payment terms…" required></textarea><span class="err" role="alert"></span></label>
+    <input name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px">
+    <div class="full"><button class="btn" type="submit">Send enquiry</button></div>
+    <div class="ok" role="status"></div>
+  </form>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/main.js" defer></script>
+</body>
+</html>
